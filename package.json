@@ -1,6 +1,6 @@
 {
   "name": "@rafalmeidas/lib-mui-react-hook-form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "build": "rollup -c"
@@ -23,17 +23,22 @@
     "typescript": "4.9.5"
   },
   "peerDependencies": {
-    "react": "18.2.0",
-    "react-hook-form": "7.43.5",
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
     "@hookform/resolvers": "2.9.11",
-    "@mui/material": "5.11.12"
+    "@mui/material": "5.11.12",
+    "react": "18.2.0",
+    "react-hook-form": "7.43.5"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@rafalmeidas/lib-mui-react-hook-form": "^1.0.2",
+    "install": "^0.13.0",
+    "npm": "^9.6.1"
+  }
 }
