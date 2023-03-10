@@ -1,8 +1,7 @@
 {
   "name": "@rafalmeidas/lib-mui-react-hook-form",
-  "version": "1.0.3",
-  "private": true,
-  "description": "",
+  "version": "1.0.4",
+  "private": false,
   "scripts": {
     "build": "rollup -c"
   },
@@ -38,8 +37,17 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@rafalmeidas/lib-mui-react-hook-form": "^1.0.2",
+    "@rafalmeidas/lib-mui-react-hook-form": "^1.0.4",
     "install": "^0.13.0",
     "npm": "^9.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalmeidas/lib-mui-react-hook-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafalmeidas/lib-mui-react-hook-form/issues"
+  },
+  "homepage": "https://github.com/rafalmeidas/lib-mui-react-hook-form#readme",
+  "description": ""
 }
