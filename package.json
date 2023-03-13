@@ -1,6 +1,6 @@
 {
   "name": "lib-mui-react-hook-form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My package from React",
   "main": "dist/csj/index.js",
   "module": "dist/esm/index.js",

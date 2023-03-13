@@ -1,11 +1,5 @@
-export {
-  default as MUIHookFormAutocompleteMultiple,
-  OptionAutocompleteMultiple,
-} from "./MUIHookFormAutocompleteMultiple";
-export {
-  default as MUIHookFormAutocomplete,
-  OptionAutocomplete,
-} from "./MUIHookFormAutocomplete";
+export { default as MUIHookFormAutocompleteMultiple } from "./MUIHookFormAutocompleteMultiple";
+export { default as MUIHookFormAutocomplete } from "./MUIHookFormAutocomplete";
 export { default as MUIHookFormTextField } from "./MUIHookFormTextField";
 export { default as MUIHookFormCheckbox } from "./MUIHookFormCheckbox";
 export { default as MuiHookFormSelect } from "./MuiHookFormSelect";
