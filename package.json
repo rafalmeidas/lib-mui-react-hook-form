@@ -1,26 +1,43 @@
 {
-  "name": "@rafalmeidas/lib-mui-react-hook-form",
-  "version": "1.0.4",
-  "private": false,
+  "name": "lib-mui-react-hook-form",
+  "version": "1.0.1",
+  "description": "My package from React",
+  "main": "dist/csj/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "npm run build:esm && npm run build:csj",
+    "build:esm": "tsc",
+    "build:csj": "tsc --module CommonJS --outDir dist/csj",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Rafael Silva",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/rafalmeidas"
-  },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "24.0.1",
-    "@rollup/plugin-node-resolve": "15.0.1",
-    "@rollup/plugin-typescript": "11.0.0",
+    "@babel/core": "7.21.0",
+    "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-essentials": "6.5.16",
+    "@storybook/addon-interactions": "6.5.16",
+    "@storybook/addon-links": "6.5.16",
+    "@storybook/builder-webpack4": "6.5.16",
+    "@storybook/manager-webpack4": "6.5.16",
+    "@storybook/react": "6.5.16",
+    "@storybook/testing-library": "0.0.13",
+    "@types/node": "18.15.0",
     "@types/react": "18.0.28",
-    "rollup": "3.19.0",
-    "rollup-plugin-dts": "5.2.0",
-    "rollup-plugin-peer-deps-external": "2.2.4",
-    "rollup-plugin-terser": "7.0.2",
-    "tslib": "2.5.0",
-    "typescript": "4.9.5"
+    "@types/react-dom": "18.0.11",
+    "babel-loader": "8.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@hookform/resolvers": "2.9.11",
+    "@mui/material": "5.11.12",
+    "react-hook-form": "7.43.5"
   },
   "peerDependencies": {
     "@emotion/react": "11.10.6",
@@ -28,26 +45,8 @@
     "@hookform/resolvers": "2.9.11",
     "@mui/material": "5.11.12",
     "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-hook-form": "7.43.5"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts",
-  "dependencies": {
-    "@rafalmeidas/lib-mui-react-hook-form": "^1.0.4",
-    "install": "^0.13.0",
-    "npm": "^9.6.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafalmeidas/lib-mui-react-hook-form.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rafalmeidas/lib-mui-react-hook-form/issues"
-  },
-  "homepage": "https://github.com/rafalmeidas/lib-mui-react-hook-form#readme",
-  "description": ""
+  "dependencies": {}
 }
