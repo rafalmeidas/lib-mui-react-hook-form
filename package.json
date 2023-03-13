@@ -6,7 +6,7 @@
     "build": "rollup -c"
   },
   "author": "Rafael Silva",
-  "license": "ISC",
+  "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/rafalmeidas"
   },
